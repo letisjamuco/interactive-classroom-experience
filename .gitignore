@@ -1,3 +1,4 @@
+# Unity caches
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -6,13 +7,29 @@
 [Ll]ogs/
 UserSettings/
 MemoryCaptures/
+
+# Visual Studio / IDE
 .vs/
 .idea/
 *.csproj
+*.unityproj
 *.sln
+*.suo
 *.user
 *.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
 
-!Assets/**/*
-!Packages/**/*
-!ProjectSettings/**/*
+# Misc / OS
+.DS_Store
+Thumbs.db
+
+# Optional caches/artifacts
+[Bb]uildOutput/
+[Aa]sset[Ss]tore/
+
+# JetBrains rider editor plugin
+/Assets/Plugins/Editor/JetBrains*
