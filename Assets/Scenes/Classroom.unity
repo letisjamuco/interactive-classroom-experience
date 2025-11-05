@@ -1326,7 +1326,7 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   m_Layer: 0
-  m_Name: 'Camera: Classroom overview'
+  m_Name: 'Camera: Classroom Overview'
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5017,12 +5017,12 @@ GameObject:
   - component: {fileID: 1285086091}
   - component: {fileID: 1285086090}
   m_Layer: 0
-  m_Name: 'Camera: Chandelier lighting'
+  m_Name: 'Camera: Chandelier Lighting'
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1285086090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5135,7 +5135,7 @@ Transform:
   m_GameObject: {fileID: 1285086089}
   serializedVersion: 2
   m_LocalRotation: {x: 0.21378224, y: 0.1922966, z: -0.04458218, w: 0.95672965}
-  m_LocalPosition: {x: 1.6, y: 63.4, z: -7.77}
+  m_LocalPosition: {x: -1.6, y: 62.3, z: -7.77}
   m_LocalScale: {x: 16.204433, y: 16.204433, z: 16.204433}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5154,12 +5154,12 @@ GameObject:
   - component: {fileID: 1287364857}
   - component: {fileID: 1287364856}
   m_Layer: 0
-  m_Name: 'Camera: Table area closeup'
+  m_Name: 'Camera: Table Area Closeup'
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1287364856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5530,7 +5530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1339927209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6411,6 +6411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Empty Room
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b080707c5870d214fb1df550d793a578, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1525504935312832503, guid: b080707c5870d214fb1df550d793a578, type: 3}
       propertyPath: m_Name
       value: Window (1)
@@ -6486,7 +6490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1635127009
 MonoBehaviour:
   m_ObjectHideFlags: 0
