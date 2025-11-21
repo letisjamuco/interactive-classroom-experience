@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.039546248, g: 0.039546248, b: 0.039546248, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.6
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0b846be1b116429409a7669cacf2a62e, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -35,9 +35,9 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 410087040}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1561,7 +1561,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 0.29803923, g: 0.29803923, b: 0.29803923, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.5
   m_Range: 4
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1604,7 +1604,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3900
+  m_ColorTemperature: 6000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -2160,8 +2160,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 1, g: 0.95686275, b: 0.8156863, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2204,7 +2204,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 5500
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -2223,13 +2223,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.92918354, y: -0.083868, z: -0.32146883, w: 0.16199373}
-  m_LocalPosition: {x: 20.930038, y: 92.443794, z: 24.6}
-  m_LocalScale: {x: 4.9557147, y: 4.9557147, z: 4.9557147}
+  m_LocalRotation: {x: -0.0019391861, y: -0.19539016, z: 0.38269332, w: -0.9029755}
+  m_LocalPosition: {x: 34, y: 93.9, z: 24.6}
+  m_LocalScale: {x: 4.1848035, y: 4.1848035, z: 4.1848035}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 200.791, y: -397.586, z: -3.169983}
+  m_LocalEulerAnglesHint: {x: 171.196, y: -519.172, z: -224.315}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6587,7 +6587,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1156298576}
+      addedObject: {fileID: 1156298580}
   m_SourcePrefab: {fileID: 100100000, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
 --- !u!4 &1156298573 stripped
 Transform:
@@ -6599,7 +6599,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -516098083770646512, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
   m_PrefabInstance: {fileID: 1156298572}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1156298576
+--- !u!82 &1156298580
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6620,12 +6620,12 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 10
-  MaxDistance: 20
+  MinDistance: 1
+  MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 0
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -6656,7 +6656,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.168
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -8353,7 +8353,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.9647059, b: 0.9098039, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.5
   m_Range: 4
   m_SpotAngle: 69.218094
   m_InnerSpotAngle: 0
@@ -8396,7 +8396,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1.2876563, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 6000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -8599,6 +8599,54 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.6896797
   m_Center: {x: 2.4466543e-17, y: -3.8138412e-15, z: 0.22580916}
+--- !u!1 &1517865049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1517865051}
+  - component: {fileID: 1517865050}
+  m_Layer: 0
+  m_Name: DayNightManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1517865050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517865049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62889118c35e4a947aa95a5cd3e6307e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DayNightSwitch
+  sun: {fileID: 410087040}
+  daySkybox: {fileID: 0}
+  nightSkybox: {fileID: 2100000, guid: 82b660520bdecce4daf45d270ec93fe4, type: 2}
+  isDay: 1
+--- !u!4 &1517865051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517865049}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.50438, y: 102.55972, z: 5.89159}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1539305228 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cf7599f1392c5b6489fc9d2d313362f6, type: 3}
@@ -8753,6 +8801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chandelier
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e0546ea8c4b71a54289ed2e0de4cc3f5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2907241133393865958, guid: e0546ea8c4b71a54289ed2e0de4cc3f5, type: 3}
       propertyPath: m_Name
       value: Light (4)
@@ -8867,6 +8919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Window (3)
       objectReference: {fileID: 0}
+    - target: {fileID: -2277309834036754802, guid: b080707c5870d214fb1df550d793a578, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 02b89e5b93c074840ab7dea347f7d183, type: 2}
     - target: {fileID: -1705626793883817246, guid: b080707c5870d214fb1df550d793a578, type: 3}
       propertyPath: m_Name
       value: Window (2)
@@ -8906,7 +8962,7 @@ PrefabInstance:
     - target: {fileID: 4407187375235809858, guid: b080707c5870d214fb1df550d793a578, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d2a6efdc3bad9754b95fe48450776832, type: 2}
+      objectReference: {fileID: 2100000, guid: 02b89e5b93c074840ab7dea347f7d183, type: 2}
     - target: {fileID: 5525567025080852712, guid: b080707c5870d214fb1df550d793a578, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.091
@@ -8930,7 +8986,7 @@ PrefabInstance:
     - target: {fileID: 8835409689826365435, guid: b080707c5870d214fb1df550d793a578, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: d2a6efdc3bad9754b95fe48450776832, type: 2}
+      objectReference: {fileID: 2100000, guid: 02b89e5b93c074840ab7dea347f7d183, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 4444558461230370346, guid: b080707c5870d214fb1df550d793a578, type: 3}
@@ -10252,7 +10308,7 @@ MonoBehaviour:
   - {fileID: 2075572665}
   - {fileID: 294793176}
   bulbRenderer: {fileID: 1581322730}
-  clickSound: {fileID: 1156298576}
+  clickSound: {fileID: 1156298580}
   interactKey: 101
 --- !u!1001 &1702856757
 PrefabInstance:
@@ -10396,7 +10452,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.9647059, b: 0.9098039, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.5
   m_Range: 4
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10439,7 +10495,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3900
+  m_ColorTemperature: 6000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -12069,7 +12125,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.9647059, b: 0.9098039, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.5
   m_Range: 4
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -12112,7 +12168,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3900
+  m_ColorTemperature: 6000
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -12465,19 +12521,27 @@ SceneRoots:
   - {fileID: 1287364859}
   - {fileID: 1635127012}
   - {fileID: 1339927212}
+  - {fileID: 1517865051}
   - {fileID: 410087041}
+  - {fileID: 368624372328733800}
   - {fileID: 1606180471}
+  - {fileID: 518365301}
+  - {fileID: 1581322729}
+  - {fileID: 1156298572}
   - {fileID: 1921631579}
   - {fileID: 1060473521}
   - {fileID: 1833042096}
   - {fileID: 51803367}
   - {fileID: 391831868}
+  - {fileID: 2110042660}
+  - {fileID: 1981906302}
   - {fileID: 245920341}
   - {fileID: 138433656}
   - {fileID: 442714786}
   - {fileID: 904020776}
   - {fileID: 579730525}
   - {fileID: 1129727761}
+  - {fileID: 1086441296}
   - {fileID: 590446296}
   - {fileID: 517106894}
   - {fileID: 815318364}
@@ -12495,10 +12559,3 @@ SceneRoots:
   - {fileID: 1442324107}
   - {fileID: 1305467103}
   - {fileID: 452374391}
-  - {fileID: 2110042660}
-  - {fileID: 1981906302}
-  - {fileID: 1581322729}
-  - {fileID: 1156298572}
-  - {fileID: 518365301}
-  - {fileID: 368624372328733800}
-  - {fileID: 1086441296}
