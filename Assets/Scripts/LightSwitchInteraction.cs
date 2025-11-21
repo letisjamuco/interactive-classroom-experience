@@ -3,62 +3,62 @@ using UnityEngine;
 public class LightSwitchInteraction : MonoBehaviour
 {
     [Header("References")]
-    public Light[] lightsToToggle; // lights that will turn on/off
-    public Renderer bulbRenderer; // the lamp's mesh (if you have one)
-    public AudioSource clickSound; // switch sound (optional)
+    public Light[] lightsToToggle;
+    public MeshRenderer bulbRenderer;
+    public AudioSource clickSound;
 
     [Header("Settings")]
     public KeyCode interactKey = KeyCode.E;
 
-    private bool playerNear = false;
-    private bool isOn = true;
+    private bool isPlayerInside = false;
+    private bool lightsOn = true;
 
-    void Start()
-    {
-        UpdateLights();
-    }
-
-    void Update()
-    {
-        if (playerNear && Input.GetKeyDown(interactKey))
-        {
-            isOn = !isOn;
-            UpdateLights();
-
-            if (clickSound != null)
-                clickSound.Play();
-        }
-    }
-
-    void UpdateLights()
-    {
-        // enable/disable the Light components
-        foreach (var l in lightsToToggle)
-        {
-            if (l != null) l.enabled = isOn;
-        }
-
-        // if the lamp has an emissive material
-        if (bulbRenderer != null)
-        {
-            var mat = bulbRenderer.material;
-            if (isOn)
-                mat.EnableKeyword("_EMISSION");
-            else
-                mat.DisableKeyword("_EMISSION");
-        }
-    }
-
-    // Trigger zone in front of the switch
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-            playerNear = true;
+        {
+            isPlayerInside = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
-            playerNear = false;
+        {
+            isPlayerInside = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (!isPlayerInside) return;
+
+        if (Input.GetKeyDown(interactKey))
+        {
+            ToggleLights();
+        }
+    }
+
+    private void ToggleLights()
+    {
+        lightsOn = !lightsOn;
+
+        foreach (var l in lightsToToggle)
+        {
+            if (l != null) l.enabled = lightsOn;
+        }
+
+        if (bulbRenderer != null)
+        {
+            if (lightsOn)
+                bulbRenderer.material.EnableKeyword("_EMISSION");
+            else
+                bulbRenderer.material.DisableKeyword("_EMISSION");
+        }
+
+        if (clickSound != null)
+        {
+            clickSound.Play();
+        }
     }
 }
