@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6461580829758797062}
   - component: {fileID: 3145014666653023512}
-  - component: {fileID: 1947706671609685382}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -59,24 +58,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1947706671609685382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6974629761804342461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b165d1918f7909641a32b74f9723c76a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SimplePlayerController
-  controller: {fileID: 3145014666653023512}
-  cameraTransform: {fileID: 174107283417747576}
-  moveSpeed: 5
-  mouseSensitivity: 2
-  gravity: -9.81
-  jumpHeight: 1.5
 --- !u!1 &9142606770905818450
 GameObject:
   m_ObjectHideFlags: 0
