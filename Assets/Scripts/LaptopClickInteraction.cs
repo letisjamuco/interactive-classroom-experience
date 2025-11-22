@@ -2,33 +2,37 @@ using UnityEngine;
 
 public class LaptopClickInteraction : MonoBehaviour
 {
-    public Renderer screenRenderer;    // only the screen mesh
-    public Material screenOnMaterial;  // material for "screen on"
-    public Material screenOffMaterial; // material for "screen off"
+    [Header("Screen setup")]
+    public Renderer screenRenderer;       // Screen mesh renderer
+    public Material screenOnMaterial;     // Material when laptop is ON
+    public Material screenOffMaterial;    // Material when laptop is OFF
 
-    public AudioSource typingAudio;    // typing sound (loop or one-shot)
+    [Header("Audio")]
+    public AudioSource typingAudio;       // Typing sound
 
     private bool isOn = false;
 
     void Start()
     {
+        // Initialize screen state at start
         UpdateScreen();
     }
 
     void OnMouseDown()
     {
-        // requires collider on the laptop/screen
+        // This method is called when the user LEFT-clicks the object
+        // Requires a Collider on this GameObject
         isOn = !isOn;
         UpdateScreen();
     }
 
     void UpdateScreen()
     {
+        // Toggle screen material
         if (screenRenderer != null)
-        {
             screenRenderer.material = isOn ? screenOnMaterial : screenOffMaterial;
-        }
 
+        // Toggle typing sound
         if (typingAudio != null)
         {
             if (isOn && !typingAudio.isPlaying)
