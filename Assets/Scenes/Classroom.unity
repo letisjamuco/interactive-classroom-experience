@@ -1532,8 +1532,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.48880395, y: 0.5777778, z: 0.2101225}
-  m_Center: {x: -0.11777325, y: 0.07245585, z: 0.0033785594}
+  m_Size: {x: 0.6279901, y: 0.70807165, z: 0.31008366}
+  m_Center: {x: -0.1697234, y: 0.1376027, z: -0.01028698}
 --- !u!114 &279394251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13214,8 +13214,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.8833376, y: 1.4923981, z: 0.9045319}
-  m_Center: {x: -0.05784059, y: -0.12967238, z: 0.0471868}
+  m_Size: {x: 1.0345997, y: 1.5274237, z: 1.0630884}
+  m_Center: {x: -0.037346978, y: -0.11225575, z: 0.12670214}
 --- !u!1001 &1884961147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15631,7 +15631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SimplePlayerController
   controller: {fileID: 368624372328733806}
   cameraTransform: {fileID: 1777615575}
-  moveSpeed: 4
+  moveSpeed: 8
   mouseSensitivity: 2
   gravity: -9.81
   jumpHeight: 1.5
