@@ -8619,7 +8619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\n\n\nWORKSPACE EXPERIENCE - CONTROLS\n\nMOVE: WASD / Arrows  \u2022 
+  m_text: "\n\n\n\n\nWORKSPACE EXPERIENCE - CONTROLS\n\nMOVE: \nWASD / Arrows  \u2022 
     LOOK: Mouse  \u2022  CROUCH: C\n\nINTERACT (E):\nLight Switch \u2022 Notebook
     \u2022 Headphones \u2022 Window\n\nOTHER:\nLeft Click - Laptop  \u2022  N - Day/Night
     Toggle\n\n\nPress SPACE or ENTER to start"
