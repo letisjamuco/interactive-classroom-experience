@@ -7,7 +7,7 @@ public class SimplePlayerController : MonoBehaviour
     public Transform cameraTransform;
 
     [Header("Movement")]
-    public float moveSpeed = 4f;
+    public float moveSpeed = 6f;
     public float mouseSensitivity = 2f;
     public float gravity = -9.81f;
     public float jumpHeight = 1.5f;
