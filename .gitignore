@@ -8,6 +8,10 @@
 UserSettings/
 MemoryCaptures/
 
+# WebGL build folder
+WebGLBuild/
+Build_WebGL/
+
 # Visual Studio / IDE
 .vs/
 .idea/
