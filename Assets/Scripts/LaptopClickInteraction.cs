@@ -154,7 +154,7 @@ public class LaptopClickInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = true;
-            Debug.Log("Player ENTERED laptop trigger zone");
+            InteractionHintUI.Instance?.ShowHint("Left click to use laptop");
         }
     }
 
@@ -163,9 +163,8 @@ public class LaptopClickInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
-            Debug.Log("Player EXITED laptop trigger zone");
+            InteractionHintUI.Instance?.HideHint();
 
-            // Turn off when leaving
             if (isOn)
             {
                 isOn = false;

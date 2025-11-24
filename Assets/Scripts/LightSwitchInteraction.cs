@@ -18,6 +18,8 @@ public class LightSwitchInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInside = true;
+
+            InteractionHintUI.Instance?.ShowHint("Press E to toggle lights");
         }
     }
 
@@ -26,6 +28,7 @@ public class LightSwitchInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInside = false;
+            InteractionHintUI.Instance?.HideHint();
         }
     }
 

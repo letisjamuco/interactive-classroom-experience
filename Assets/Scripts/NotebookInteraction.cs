@@ -92,7 +92,7 @@ public class NotebookInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = true;
-            Debug.Log("Player entered notebook trigger");
+            InteractionHintUI.Instance?.ShowHint("Press E to open notebook");
         }
     }
 
@@ -101,9 +101,8 @@ public class NotebookInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
-            Debug.Log("Player exited notebook trigger");
+            InteractionHintUI.Instance?.HideHint();
 
-            // Auto-close notebook if the player walks away
             if (isOpen)
                 CloseNotebook();
         }
