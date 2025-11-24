@@ -22,7 +22,7 @@ public class LightSwitchInteraction : MonoBehaviour
         {
             isPlayerInside = true;
             highlight?.SetHighlighted(true);
-            InteractionHintUI.Instance?.ShowHint("Press E to toggle lights. Try to press N for full night experience!");
+            InteractionHintUI.Instance?.ShowHint("Press E to toggle lights.\n Try to press N for full night experience!");
         }
     }
 

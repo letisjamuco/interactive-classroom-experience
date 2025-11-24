@@ -95,7 +95,7 @@ public class NotebookInteraction : MonoBehaviour
         {
             playerInside = true;
             highlight?.SetHighlighted(true);
-            InteractionHintUI.Instance?.ShowHint("Press E to open notebook. Move away to close notebook or press ESC.");
+            InteractionHintUI.Instance?.ShowHint("Press E to open notebook. \n Move away to close notebook or press ESC.");
         }
     }
 
