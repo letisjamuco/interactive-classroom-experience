@@ -18,6 +18,8 @@ public class LaptopClickInteraction : MonoBehaviour
     private bool isOn = false;
     private bool playerInside = false;
 
+    public InteractableHighlight highlight;
+
     void Start()
     {
         UpdateScreenAndAudio();
@@ -154,6 +156,7 @@ public class LaptopClickInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = true;
+            highlight?.SetHighlighted(true);
             InteractionHintUI.Instance?.ShowHint("Left click to use laptop");
         }
     }
@@ -163,6 +166,7 @@ public class LaptopClickInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
+            highlight?.SetHighlighted(false);
             InteractionHintUI.Instance?.HideHint();
 
             if (isOn)

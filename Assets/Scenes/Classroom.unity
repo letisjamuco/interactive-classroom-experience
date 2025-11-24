@@ -659,19 +659,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.3806618
+      value: 0.3788172
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.039441228
+      value: 0.039297108
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.92106664
+      value: 0.92182684
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.07195349
+      value: -0.07203228
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -679,7 +679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 135.176
+      value: 135.405
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -800,6 +800,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1849666222320202036, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 138433659}
+    - targetCorrespondingSourceObject: {fileID: 1849666222320202036, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 138433663}
   m_SourcePrefab: {fileID: 100100000, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
 --- !u!4 &138433657 stripped
 Transform:
@@ -908,6 +911,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &138433663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138433658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
+  renderers: []
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightIntensity: 2
 --- !u!1001 &173304220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1367,6 +1385,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1849666222320202036, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 245920344}
+    - targetCorrespondingSourceObject: {fileID: 1849666222320202036, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 245920348}
   m_SourcePrefab: {fileID: 100100000, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
 --- !u!4 &245920342 stripped
 Transform:
@@ -1475,6 +1496,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &245920348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245920343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
+  renderers: []
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightIntensity: 2
 --- !u!4 &257339146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1853137970322253027, guid: e0546ea8c4b71a54289ed2e0de4cc3f5, type: 3}
@@ -1547,9 +1583,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotebookInteraction
   notebookCanvas: {fileID: 1086441292}
-  playerController: {fileID: 0}
+  playerController: {fileID: 368624372328733807}
   interactKey: 101
   closeKey: 27
+  highlight: {fileID: 1572378855}
 --- !u!1 &294793173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,8 +3031,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.04016785, y: 0.062365767, z: 3.2450724}
-  m_Center: {x: 0.008005504, y: 0.0069024563, z: -0.46763384}
+  m_Size: {x: 0.032879964, y: 0.062365767, z: 2.8322654}
+  m_Center: {x: 0.010605141, y: 0.006902463, z: -0.9311098}
 --- !u!114 &487246630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3017,6 +3054,7 @@ MonoBehaviour:
   raycastLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+  highlight: {fileID: 2132121162}
 --- !u!1001 &517106894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3810,6 +3848,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8406c292b8f3ba244bc8e88caed3a809, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1572378854}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8406c292b8f3ba244bc8e88caed3a809, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1572378855}
   m_SourcePrefab: {fileID: 100100000, guid: 8406c292b8f3ba244bc8e88caed3a809, type: 3}
 --- !u!4 &579730526 stripped
 Transform:
@@ -4119,8 +4160,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.781535
-  m_Center: {x: 0.022143302, y: -3.9640164e-15, z: 0.20245202}
+  m_Radius: 0.6899245
+  m_Center: {x: 0.11375387, y: -5.2823397e-15, z: 0.20245203}
 --- !u!1 &662914145
 GameObject:
   m_ObjectHideFlags: 0
@@ -6094,7 +6135,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -6593,8 +6634,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.59276634
-  m_Center: {x: -4.619078e-16, y: 1.4805326e-15, z: 0.103073746}
+  m_Radius: 0.46768725
+  m_Center: {x: -0.12507914, y: 1.1674912e-15, z: 0.103073694}
 --- !u!1001 &946447061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7746,6 +7787,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1156298580}
+    - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1156298584}
   m_SourcePrefab: {fileID: 100100000, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
 --- !u!4 &1156298573 stripped
 Transform:
@@ -7854,6 +7898,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1156298584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156298575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
+  renderers: []
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightIntensity: 2
 --- !u!1001 &1158360318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8866,8 +8925,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\n\n\n\n\nWORKSPACE EXPERIENCE - CONTROLS\n\nMOVE: \nWASD / Arrows  \u2022 
     LOOK: Mouse  \u2022  CROUCH: C\n\nINTERACT (E):\nLight Switch \u2022 Notebook
-    \u2022 Headphones \u2022 Window\n\nOTHER:\nLeft Click - Laptop  \u2022  N - Day/Night
-    Toggle\n\n\nPress SPACE or ENTER to start"
+    \u2022 Headphones\n\nOTHER:\nLeft Click - Laptop  \u2022  N - Day/Night Toggle\n\n\nPress
+    SPACE or ENTER to start"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9891,6 +9950,7 @@ MonoBehaviour:
   raycastLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+  highlight: {fileID: 2110042666}
 --- !u!1001 &1442324107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10777,6 +10837,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1572378855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572378853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
+  renderers: []
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightIntensity: 2
 --- !u!1001 &1581322729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11001,7 +11076,7 @@ RectTransform:
   m_GameObject: {fileID: 1599434124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.12, y: 0.12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1620407366}
@@ -12860,8 +12935,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12.056143, y: 2.889923, z: 2.975998}
-  m_Center: {x: -5.528064, y: 0.020357553, z: 0.7193592}
+  m_Size: {x: 12.056143, y: 4.3751516, z: 4.0691795}
+  m_Center: {x: -5.5280557, y: -0.14176999, z: 0.687314}
 --- !u!114 &1690761426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12882,6 +12957,7 @@ MonoBehaviour:
   bulbRenderer: {fileID: 1581322730}
   clickSound: {fileID: 1156298580}
   interactKey: 101
+  highlight: {fileID: 0}
 --- !u!114 &1690761427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12902,6 +12978,7 @@ MonoBehaviour:
   bulbRenderer: {fileID: 1835613718}
   clickSound: {fileID: 1156298580}
   interactKey: 101
+  highlight: {fileID: 1156298584}
 --- !u!1001 &1702856757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13977,8 +14054,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0345997, y: 1.5274237, z: 1.0630884}
-  m_Center: {x: -0.037346978, y: -0.11225575, z: 0.12670214}
+  m_Size: {x: 0.94441277, y: 1.5274237, z: 1.4939533}
+  m_Center: {x: -0.040291462, y: -0.11193593, z: -0.08876854}
 --- !u!114 &1868111977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13993,6 +14070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HeadphonesInteraction
   music: {fileID: 245920344}
   interactKey: 101
+  highlight: {fileID: 245920348}
 --- !u!1001 &1884961147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15333,13 +15411,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044908427}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.078877866, y: 0.9185297, z: -0.022592373, w: 0.38674426}
-  m_LocalPosition: {x: 0.758, y: 0.114, z: 0.092}
-  m_LocalScale: {x: 0.3949737, y: 0.16252652, z: 0.3016653}
+  m_LocalRotation: {x: -0.0011897491, y: -0.9921325, z: 0.08204571, w: -0.094553016}
+  m_LocalPosition: {x: 0.674, y: 0.162, z: 0.212}
+  m_LocalScale: {x: 0.34017265, y: 0.36749724, z: 0.36383927}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 138433657}
-  m_LocalEulerAnglesHint: {x: 5.884, y: 134.712, z: 7.36}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2044908430
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15359,8 +15437,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3138431, y: 2.9311316, z: 1.2613269}
-  m_Center: {x: -0.09059218, y: -0.024134055, z: -0.041657858}
+  m_Size: {x: 1.0031363, y: 1.4787675, z: 1.583398}
+  m_Center: {x: -0.060163375, y: -0.16381626, z: 0.44513756}
 --- !u!114 &2044908431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15375,6 +15453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HeadphonesInteraction
   music: {fileID: 138433659}
   interactKey: 101
+  highlight: {fileID: 138433663}
 --- !u!1 &2064404015 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1db4adc9db0d1b548b35a4c6ff2cbc26, type: 3}
@@ -15838,6 +15917,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5628346422562552948, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2110042664}
+    - targetCorrespondingSourceObject: {fileID: 5628346422562552948, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2110042666}
   m_SourcePrefab: {fileID: 100100000, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
 --- !u!23 &2110042661 stripped
 MeshRenderer:
@@ -15871,6 +15953,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5515173724718089354, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
+--- !u!114 &2110042666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774878981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
+  renderers: []
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightIntensity: 2
 --- !u!1 &2115592611
 GameObject:
   m_ObjectHideFlags: 0
@@ -15977,7 +16074,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.66
+      value: -17.38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15985,11 +16082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.57
+      value: 3.57
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7175644
+      value: 0.6364246
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalRotation.x
@@ -15997,7 +16094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6964922
+      value: -0.771339
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalRotation.z
@@ -16009,7 +16106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -88.292
+      value: -100.949
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -16118,6 +16215,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5628346422562552948, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2132121160}
+    - targetCorrespondingSourceObject: {fileID: 5628346422562552948, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2132121162}
   m_SourcePrefab: {fileID: 100100000, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
 --- !u!1 &2132121153 stripped
 GameObject:
@@ -16253,6 +16353,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5515173724718089354, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
+--- !u!114 &2132121162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076973579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
+  renderers: []
+  highlightColor: {r: 1, g: 1, b: 1, a: 1}
+  highlightIntensity: 2
 --- !u!1001 &368624372328733800
 PrefabInstance:
   m_ObjectHideFlags: 0

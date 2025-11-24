@@ -13,6 +13,8 @@ public class NotebookInteraction : MonoBehaviour
     private bool playerInside = false;
     private bool isOpen = false;
 
+    public InteractableHighlight highlight;
+
     void Start()
     {
         if (notebookCanvas != null)
@@ -92,7 +94,8 @@ public class NotebookInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = true;
-            InteractionHintUI.Instance?.ShowHint("Press E to open notebook");
+            highlight?.SetHighlighted(true);
+            InteractionHintUI.Instance?.ShowHint("Press E to open notebook. Move away to close notebook or press ESC.");
         }
     }
 
@@ -101,6 +104,7 @@ public class NotebookInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
+            highlight?.SetHighlighted(false);
             InteractionHintUI.Instance?.HideHint();
 
             if (isOpen)

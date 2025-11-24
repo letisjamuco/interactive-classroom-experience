@@ -8,6 +8,8 @@ public class HeadphonesInteraction : MonoBehaviour
 
     public KeyCode interactKey = KeyCode.E;
 
+    public InteractableHighlight highlight;
+
     void Update()
     {
         if (!inside) return;
@@ -28,6 +30,7 @@ public class HeadphonesInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inside = true;
+            highlight?.SetHighlighted(true);
             InteractionHintUI.Instance?.ShowHint("Press E to play/pause music");
         }
     }
@@ -37,6 +40,7 @@ public class HeadphonesInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             inside = false;
+            highlight?.SetHighlighted(false);
             InteractionHintUI.Instance?.HideHint();
         }
     }

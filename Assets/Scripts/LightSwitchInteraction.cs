@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class LightSwitchInteraction : MonoBehaviour
@@ -13,13 +14,15 @@ public class LightSwitchInteraction : MonoBehaviour
     private bool isPlayerInside = false;
     private bool lightsOn = true;
 
+    public InteractableHighlight highlight;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             isPlayerInside = true;
-
-            InteractionHintUI.Instance?.ShowHint("Press E to toggle lights");
+            highlight?.SetHighlighted(true);
+            InteractionHintUI.Instance?.ShowHint("Press E to toggle lights. Try to press N for full night experience!");
         }
     }
 
@@ -28,6 +31,7 @@ public class LightSwitchInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInside = false;
+            highlight?.SetHighlighted(false);
             InteractionHintUI.Instance?.HideHint();
         }
     }
