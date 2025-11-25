@@ -625,26 +625,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &124714527 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
-  m_PrefabInstance: {fileID: 2132121151}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &124714529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124714527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
-  renderers: []
-  highlightColor: {r: 0.6, g: 1, b: 0.6, a: 1}
-  highlightIntensity: 3
 --- !u!1001 &138433656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1390,9 +1370,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1849666222320202036, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 245920344}
-    - targetCorrespondingSourceObject: {fileID: 1849666222320202036, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 245920348}
   m_SourcePrefab: {fileID: 100100000, guid: af40d3e94af00f94690e45c3800c52f9, type: 3}
 --- !u!4 &245920342 stripped
 Transform:
@@ -1501,21 +1478,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &245920348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245920343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
-  renderers: []
-  highlightColor: {r: 0.6, g: 1, b: 0.6, a: 1}
-  highlightIntensity: 3
 --- !u!4 &257339146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1853137970322253027, guid: e0546ea8c4b71a54289ed2e0de4cc3f5, type: 3}
@@ -1531,7 +1493,6 @@ GameObject:
   m_Component:
   - component: {fileID: 279394249}
   - component: {fileID: 279394250}
-  - component: {fileID: 279394251}
   m_Layer: 3
   m_Name: NotebookTrigger
   m_TagString: Untagged
@@ -1575,23 +1536,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6279901, y: 0.70807165, z: 0.31008366}
   m_Center: {x: -0.1697234, y: 0.1376027, z: -0.01028698}
---- !u!114 &279394251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279394248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84617a579c2598f4184a013a79deabd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NotebookInteraction
-  notebookCanvas: {fileID: 1086441292}
-  playerController: {fileID: 368624372328733807}
-  interactKey: 101
-  closeKey: 27
-  highlight: {fileID: 1572378855}
 --- !u!1 &294793173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3059,7 +3003,6 @@ MonoBehaviour:
   raycastLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  highlight: {fileID: 0}
 --- !u!1001 &517106894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4185,8 +4128,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
   renderers: []
-  highlightColor: {r: 0.6, g: 1, b: 0.6, a: 1}
+  highlightColor:
+    r: 0.6
+    g: 1
+    b: 0.6
+    a: 1
   highlightIntensity: 3
+  materialInstances: []
+  originalEmissionColors: []
+  originalEmissionEnabled: []
+  initialized: 0
 --- !u!1 &662914145
 GameObject:
   m_ObjectHideFlags: 0
@@ -7812,9 +7763,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1156298580}
-    - targetCorrespondingSourceObject: {fileID: -516098083770646512, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1156298584}
   m_SourcePrefab: {fileID: 100100000, guid: 8ef2fadf879c1b940aa1ba2744e595e3, type: 3}
 --- !u!4 &1156298573 stripped
 Transform:
@@ -7923,21 +7871,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1156298584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156298575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
-  renderers: []
-  highlightColor: {r: 0.54901963, g: 0.7882353, b: 0.14117648, a: 1}
-  highlightIntensity: 2
 --- !u!1001 &1158360318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8535,26 +8468,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00c1a901b19fe1449ad7df9c47678a6d, type: 3}
---- !u!1 &1237533438 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
-  m_PrefabInstance: {fileID: 2110042660}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1237533440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237533438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa1f2ac7cbccf1844b8cd06dbe960d77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
-  renderers: []
-  highlightColor: {r: 0.6, g: 1, b: 0.6, a: 1}
-  highlightIntensity: 3
 --- !u!1 &1243944978
 GameObject:
   m_ObjectHideFlags: 0
@@ -9995,7 +9908,6 @@ MonoBehaviour:
   raycastLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  highlight: {fileID: 0}
 --- !u!1001 &1442324107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10895,8 +10807,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableHighlight
   renderers: []
-  highlightColor: {r: 0.54901963, g: 0.7882353, b: 0.14117648, a: 1}
+  highlightColor:
+    r: 0.54901963
+    g: 0.7882353
+    b: 0.14117648
+    a: 1
   highlightIntensity: 2
+  materialInstances: []
+  originalEmissionColors: []
+  originalEmissionEnabled: []
+  initialized: 0
 --- !u!1001 &1581322729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12980,8 +12900,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12.056143, y: 4.3751516, z: 4.0691795}
-  m_Center: {x: -5.5280557, y: -0.14176999, z: 0.687314}
+  m_Size: {x: 17.040735, y: 4.3751516, z: 4.0691795}
+  m_Center: {x: -8.020342, y: -0.14176999, z: 0.6873139}
 --- !u!114 &1690761426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13002,7 +12922,6 @@ MonoBehaviour:
   bulbRenderer: {fileID: 1581322730}
   clickSound: {fileID: 1156298580}
   interactKey: 101
-  highlight: {fileID: 0}
 --- !u!114 &1690761427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13023,7 +12942,6 @@ MonoBehaviour:
   bulbRenderer: {fileID: 1835613718}
   clickSound: {fileID: 1156298580}
   interactKey: 101
-  highlight: {fileID: 1156298584}
 --- !u!1001 &1702856757
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14115,7 +14033,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HeadphonesInteraction
   music: {fileID: 245920344}
   interactKey: 101
-  highlight: {fileID: 0}
 --- !u!1001 &1884961147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15440,7 +15357,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2044908428}
   - component: {fileID: 2044908430}
-  - component: {fileID: 2044908431}
   m_Layer: 3
   m_Name: HeadphonesTrigger (2)
   m_TagString: Untagged
@@ -15484,21 +15400,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.0031363, y: 1.4787675, z: 1.583398}
   m_Center: {x: -0.060163375, y: -0.16381626, z: 0.44513756}
---- !u!114 &2044908431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2044908427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3952aacd74cd36846a0e2ea435690f0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HeadphonesInteraction
-  music: {fileID: 138433659}
-  interactKey: 101
-  highlight: {fileID: 0}
 --- !u!1 &2064404015 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1db4adc9db0d1b548b35a4c6ff2cbc26, type: 3}
@@ -15956,9 +15857,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1393920230}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1237533440}
     - targetCorrespondingSourceObject: {fileID: -6857594835553878514, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1851421900}
@@ -16239,9 +16137,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 487246627}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 124714529}
     - targetCorrespondingSourceObject: {fileID: -6857594835553878514, guid: 8b9a5e54466ea85429eaf6f1117a5707, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2132121154}
