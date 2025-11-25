@@ -92,7 +92,7 @@ public class NotebookInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = true;
-            InteractionHintUI.Instance?.ShowHint("Press E to open notebook. \n Move away to close notebook or press ESC.");
+            InteractionHintUI.Instance?.ShowHint("Press E to open notebook.\nMove away or press ESC to close.");
         }
     }
 

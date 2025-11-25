@@ -2,24 +2,49 @@ using UnityEngine;
 
 public class HeadphonesInteraction : MonoBehaviour
 {
+    [Header("References")]
     public AudioSource music;
-    private bool inside = false;
+
+    [Header("Input")]
+    public KeyCode interactKey = KeyCode.E;
+
+    private bool playerInside = false;
     private bool isPlaying = false;
 
-    public KeyCode interactKey = KeyCode.E;
+    void Start()
+    {
+        if (music != null)
+        {
+            music.Stop();
+            isPlaying = false;
+        }
+    }
 
     void Update()
     {
-        if (!inside) return;
+        if (!playerInside) return;
 
         if (Input.GetKeyDown(interactKey))
         {
-            if (!isPlaying)
-                music.Play();
-            else
-                music.Stop();
+            ToggleMusic();
+        }
+    }
 
-            isPlaying = !isPlaying;
+    private void ToggleMusic()
+    {
+        if (music == null) return;
+
+        if (!isPlaying)
+        {
+            music.Play();
+            isPlaying = true;
+            Debug.Log("Music started");
+        }
+        else
+        {
+            music.Stop();
+            isPlaying = false;
+            Debug.Log("Music stopped");
         }
     }
 
@@ -27,8 +52,9 @@ public class HeadphonesInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            inside = true;
+            playerInside = true;
             InteractionHintUI.Instance?.ShowHint("Press E to play/pause music");
+            Debug.Log("Player entered headphones zone");
         }
     }
 
@@ -36,8 +62,15 @@ public class HeadphonesInteraction : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            inside = false;
+            playerInside = false;
             InteractionHintUI.Instance?.HideHint();
+
+            if (isPlaying && music != null)
+            {
+                music.Stop();
+                isPlaying = false;
+                Debug.Log("Music stopped - player left");
+            }
         }
     }
 }
